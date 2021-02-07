@@ -1,0 +1,7 @@
+https://github.com/dube-academy/react-modal
+
+- What is a Modal?
+- Open/Close behavior
+- Background Component
+- Modal/Content Component
+- 
