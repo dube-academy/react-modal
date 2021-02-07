@@ -4,4 +4,7 @@ https://github.com/dube-academy/react-modal
 - Open/Close behavior
 - Background Component
 - Modal/Content Component
-- 
+- Bonus:
+  - ClickOutSideListener
+  - Prevent scrolling on body
+  - Why rendering outside of current DOM context?
