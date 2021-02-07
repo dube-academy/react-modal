@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 import closeIcon from "../assets/close.png";
 
@@ -34,24 +34,49 @@ const HeaderRow = styled.div`
   right: 10px;
 `;
 
-const Modal = ({ isOpen, close, children }) => {
-  if (!isOpen) return null;
+const ScrollDisabler = createGlobalStyle`
+  body {
+    overflow-y: hidden;
+  }
+`;
 
+const Modal = ({ isOpen, close, children }) => {
+  const contentRef = useRef();
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function listener(evt) {
+      if (contentRef.current?.contains(evt.target)) return;
+      close();
+    }
+
+    window.addEventListener("click", listener);
+
+    return () => {
+      window.removeEventListener("click", listener);
+    };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
   return ReactDOM.createPortal(
-    <Background>
-      <Content>
-        <HeaderRow>
-          <img
-            src={closeIcon}
-            alt=""
-            width="30px"
-            style={{ cursor: "pointer" }}
-            onClick={close}
-          />
-        </HeaderRow>
-        {children}
-      </Content>
-    </Background>,
+    <>
+      <Background>
+        <Content ref={contentRef}>
+          <HeaderRow>
+            <img
+              src={closeIcon}
+              alt=""
+              width="30px"
+              style={{ cursor: "pointer" }}
+              onClick={close}
+            />
+          </HeaderRow>
+          {children}
+        </Content>
+      </Background>
+      <ScrollDisabler />
+    </>,
     portalRoot
   );
 };

@@ -19,16 +19,76 @@ const Application = () => {
           style={{ width: "100vw" }}
           alt=""
         />
-        <Modal isOpen={isOpen} close={() => setOpen(false)}>
-          <h2>Hello from the Modal</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-            ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac
-            facilisis in, egestas eget quam. Cras mattis consectetur purus sit
-            amet fermentum.
-          </p>
-        </Modal>
+        <p>
+          Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis
+          consectetur purus sit amet fermentum. Etiam porta sem malesuada magna
+          mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Sed posuere consectetur est at lobortis.
+          Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta
+          sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+          vehicula ut id elit. Donec sed odio dui. Cras mattis consectetur purus
+          sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
+          Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis
+          in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+          Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est
+          non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+          nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit
+          libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet
+          rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at
+          eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+          mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada
+          magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id
+          elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+          eget lacinia odio sem nec elit. Sed posuere consectetur est at
+          lobortis. Vestibulum id ligula porta felis euismod semper. Aenean eu
+          leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+          Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id
+          nibh ultricies vehicula ut id elit. Donec sed odio dui. Cras mattis
+          consectetur purus sit amet fermentum. Etiam porta sem malesuada magna
+          mollis euismod. Sed posuere consectetur est at lobortis. Cras justo
+          odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum
+          nulla sed consectetur. Donec ullamcorper nulla non metus auctor
+          fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at
+          lobortis. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis
+          lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit
+          non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies
+          vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.
+          Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id
+          nibh ultricies vehicula ut id elit. Duis mollis, est non commodo
+          luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          Sed posuere consectetur est at lobortis. Vestibulum id ligula porta
+          felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna
+          mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+          Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.
+          Etiam porta sem malesuada magna mollis euismod. Sed posuere
+          consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in,
+          egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas
+          eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec
+          ullamcorper nulla non metus auctor fringilla. Duis mollis, est non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+          elit. Sed posuere consectetur est at lobortis. Nulla vitae elit
+          libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet
+          rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at
+          eget metus.
+        </p>
+        <div style={{ transform: "translateX(50px)" }}>
+          <Modal isOpen={isOpen} close={() => setOpen(false)}>
+            <h2>Hello from the Modal</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+              ut fermentum massa justo sit amet risus. Cras justo odio, dapibus
+              ac facilisis in, egestas eget quam. Cras mattis consectetur purus
+              sit amet fermentum.
+            </p>
+          </Modal>
+        </div>
       </div>
     </>
   );
